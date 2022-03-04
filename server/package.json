@@ -1,0 +1,42 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "FERN stack application for holmesglen assessment 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "server": "nodemon src/index.js",
+    "client": "cd ../ && npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tcaf351/FERN-fullstack-app.git"
+  },
+  "author": "Timothy Cafarella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tcaf351/FERN-fullstack-app/issues"
+  },
+  "homepage": "https://github.com/Tcaf351/FERN-fullstack-app#readme",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "firebase-admin": "^9.12.0",
+    "helmet": "^4.6.0",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.13"
+  }
+}
